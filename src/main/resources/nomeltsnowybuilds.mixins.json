@@ -1,6 +1,6 @@
 {
     "required": true,
-    "package": "io.github.mildesttoucan.permasnow.mixin",
+    "package": "io.github.mildesttoucan.nomeltsnowybuilds.mixin",
     "compatibilityLevel": "JAVA_21",
     "mixins": [
         "IceBlockMixin",

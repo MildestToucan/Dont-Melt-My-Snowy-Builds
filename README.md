@@ -1,4 +1,4 @@
-PermaSnow
+Dont melt my snowy builds!
 ======
 ## Because building in snowy biomes shouldn't require melting it all.
 

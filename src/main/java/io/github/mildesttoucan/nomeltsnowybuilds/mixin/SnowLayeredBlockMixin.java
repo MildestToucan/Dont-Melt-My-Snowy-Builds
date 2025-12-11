@@ -1,9 +1,9 @@
-package io.github.mildesttoucan.permasnow.mixin;
+package io.github.mildesttoucan.nomeltsnowybuilds.mixin;
 
 import com.llamalad7.mixinextras.expression.Definition;
 import com.llamalad7.mixinextras.expression.Expression;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
-import io.github.mildesttoucan.permasnow.PermaSnow;
+import io.github.mildesttoucan.nomeltsnowybuilds.DontMeltMySnowyBuilds;
 import net.minecraft.world.level.block.SnowLayerBlock;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -16,7 +16,7 @@ abstract class SnowLayeredBlockMixin {
     @Expression("?.getBrightness(?, ?) > ?")
     @ModifyExpressionValue(method = "randomTick", at = @At("MIXINEXTRAS:EXPRESSION"))
     private boolean shouldSnowMelt(boolean original) {
-        return original && PermaSnow.CONFIG.shouldSnowMelt;
+        return original && DontMeltMySnowyBuilds.CONFIG.shouldSnowMelt;
     }
 
     @Definition(id = "getBrightness", method = "Lnet/minecraft/server/level/ServerLevel;getBrightness(Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/BlockPos;)I")
@@ -24,7 +24,7 @@ abstract class SnowLayeredBlockMixin {
     @ModifyExpressionValue(method = "randomTick", at = @At("MIXINEXTRAS:EXPRESSION"))
     private int changeRequiredLight(int original) {
         // Reference the original value to best avoid snuffing out other Mixins targeting the Vanilla value.
-        if (original == PermaSnow.CONFIG.snowMeltingLightLevel) return original;
-        return PermaSnow.CONFIG.snowMeltingLightLevel;
+        if (original == DontMeltMySnowyBuilds.CONFIG.snowMeltingLightLevel) return original;
+        return DontMeltMySnowyBuilds.CONFIG.snowMeltingLightLevel;
     }
 }

@@ -1,9 +1,9 @@
-package io.github.mildesttoucan.permasnow.config;
+package io.github.mildesttoucan.nomeltsnowybuilds.config;
 
 import folk.sisby.kaleido.api.WrappedConfig;
 import folk.sisby.kaleido.lib.quiltconfig.api.annotations.Comment;
 
-public class PermaSnowConfig extends WrappedConfig {
+public class DMMSBConfig extends WrappedConfig {
 
     @Comment("Whether snow should melt from light sources (Vanilla behavior) Off by default.")
     public boolean shouldSnowMelt = false;

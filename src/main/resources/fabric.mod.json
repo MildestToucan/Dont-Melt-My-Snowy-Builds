@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "permasnow",
+	"id": "nomeltsnowybuilds",
 	"version": "${version}",
-	"name": "PermaSnow",
-	"description": "PermaSnow is a very simple MC mod that adds a config-based toggle to snow melting due to light.",
+	"name": "Dont melt my snowy builds!",
+	"description": "A very simple MC mod that adds a config-based toggle to snow melting due to light.",
 	"authors": [
 		{
 			"contact": {
@@ -13,19 +13,19 @@
 		}
 	],
 	"contact": {
-		"sources": "https://github.com/MildestToucan/PermaSnow",
-		"issues": "https://github.com/MildestToucan/PermaSnow/issues"
+		"sources": "https://github.com/MildestToucan/Dont-Melt-My-Snowy-Builds",
+		"issues": "https://github.com/MildestToucan/Dont-Melt-My-Snowy-Builds/issues"
 	},
 	"license": "MIT",
-	"icon": "assets/permasnow/actual_icon_square.png",
+	"icon": "assets/nomeltsnowybuilds/actual_icon_square.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"io.github.mildesttoucan.permasnow.PermaSnow"
+			"io.github.mildesttoucan.nomeltsnowybuilds.DontMeltMySnowyBuilds"
 		]
 	},
 	"mixins": [
-		"permasnow.mixins.json"
+		"nomeltsnowybuilds.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.2",
