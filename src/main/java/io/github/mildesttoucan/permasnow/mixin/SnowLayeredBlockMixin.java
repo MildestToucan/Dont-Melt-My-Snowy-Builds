@@ -5,11 +5,9 @@ import com.llamalad7.mixinextras.expression.Expression;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import io.github.mildesttoucan.permasnow.PermaSnow;
 import net.minecraft.world.level.block.SnowLayerBlock;
-import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
-@Debug()
 @Mixin(SnowLayerBlock.class)
 @SuppressWarnings("unused") // Class shows up as unused when abstract due to MCDev bug.
 abstract class SnowLayeredBlockMixin {
