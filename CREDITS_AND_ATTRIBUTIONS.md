@@ -1,7 +1,7 @@
 CREDITS AND ATTRIBUTIONS
 ========
 
-### [PermaSnow](https://github.com/MildestToucan/PermaSnow) (this project)
+### [Don't melt my snowy builds](https://github.com/MildestToucan/PermaSnow) (this project)
 Primary Author: [GauntRecluse AKA MildestToucan](https://github.com/MildestToucan)  
 This mod was done upon a request  
 License: [MIT](https://github.com/MildestToucan/PermaSnow/blob/master/LICENSE)
