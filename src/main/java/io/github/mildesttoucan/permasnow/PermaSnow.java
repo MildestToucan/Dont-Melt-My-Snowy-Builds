@@ -23,6 +23,6 @@ public class PermaSnow implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("PermaSnow is initializing!");
+		LOGGER.info("Preparing your snowy builds to not melt!");
 	}
 }
