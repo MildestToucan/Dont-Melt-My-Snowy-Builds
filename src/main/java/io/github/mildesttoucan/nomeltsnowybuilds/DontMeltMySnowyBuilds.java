@@ -14,7 +14,7 @@ public class DontMeltMySnowyBuilds implements ModInitializer {
 	public static final DMMSBConfig CONFIG = DMMSBConfig.createToml(
 			Paths.get("config"),
 			"",
-			"dont_melt_my_snowy_builds_config",
+			MOD_ID,
 			DMMSBConfig.class
 	);
 
