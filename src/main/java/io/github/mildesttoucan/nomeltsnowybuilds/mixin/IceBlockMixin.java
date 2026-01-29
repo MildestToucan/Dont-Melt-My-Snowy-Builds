@@ -20,8 +20,8 @@ abstract class IceBlockMixin {
     }
 
     @Definition(id = "getBrightness", method = "Lnet/minecraft/server/level/ServerLevel;getBrightness(Lnet/minecraft/world/level/LightLayer;Lnet/minecraft/core/BlockPos;)I")
-    @Definition(id = "getLightBlock", method = "Lnet/minecraft/world/level/block/state/BlockState;getLightBlock()I")
-    @Expression("?.getBrightness(?, ?) > @(?) - ?.getLightBlock()")
+    @Definition(id = "getLightBlock", method = "Lnet/minecraft/world/level/block/state/BlockState;getLightBlock(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)I")
+    @Expression("?.getBrightness(?, ?) > @(?) - ?.getLightBlock(?, ?)")
     @ModifyExpressionValue(method = "randomTick", at = @At("MIXINEXTRAS:EXPRESSION"))
     private int setIceBlockMeltingLevel(int original) {
         if (original == DontMeltMySnowyBuilds.CONFIG.iceMeltingLightLevel) return original;
