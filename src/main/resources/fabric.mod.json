@@ -3,7 +3,7 @@
 	"id": "nomeltsnowybuilds",
 	"version": "${version}",
 	"name": "Dont melt my snowy builds!",
-	"description": "A very simple MC mod that adds a config-based toggle to snow melting due to light.",
+	"description": "A very simple MC mod that adds a config-based toggle to snow melting due to light. Check out QoMC and McQoy for ease of configuration.",
 	"authors": [
 		{
 			"contact": {
@@ -29,7 +29,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.18.2",
-		"minecraft": "~1.21.1",
+		"minecraft": ">=1.21.2",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

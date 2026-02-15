@@ -12,7 +12,8 @@ base {
 
 repositories {
 	maven {
-		url 'https://repo.sleeping.town/'
+        name = "SleepingTown"
+		url = "https://repo.sleeping.town/"
 	}
 
 	maven {
@@ -45,7 +46,6 @@ repositories {
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 
-	// Mappings
 	mappings loom.officialMojangMappings()
 
 	// Fabric Loader
@@ -57,14 +57,13 @@ dependencies {
 	implementation "folk.sisby:kaleido-config:${project.kaleido_version}"
 	include "folk.sisby:kaleido-config:${project.kaleido_version}"
 
-	// McQoy Config
-	modImplementation "maven.modrinth:mcqoy:${project.mcqoy_version}"
+    modRuntimeOnly "dev.isxander:yet-another-config-lib:${project.yacl_version}"
 
-	// YACL, required by McQoy
-	modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
+    modRuntimeOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
 
-	// ModMenu
-	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
+    modRuntimeOnly "maven.modrinth:mcqoy:${project.mcqoy_version}"
+
+//    modRuntimeOnly "maven.modrinth:qomc:${project.qomc_version}"
 
 }
 

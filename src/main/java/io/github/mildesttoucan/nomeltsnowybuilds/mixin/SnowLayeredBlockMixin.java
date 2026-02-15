@@ -23,7 +23,6 @@ abstract class SnowLayeredBlockMixin {
     @Expression("?.getBrightness(?, ?) > @(?)")
     @ModifyExpressionValue(method = "randomTick", at = @At("MIXINEXTRAS:EXPRESSION"))
     private int changeRequiredLight(int original) {
-        // Reference the original value to best avoid snuffing out other Mixins targeting the Vanilla value.
         if (original == DontMeltMySnowyBuilds.CONFIG.snowMeltingLightLevel) return original;
         return DontMeltMySnowyBuilds.CONFIG.snowMeltingLightLevel;
     }
