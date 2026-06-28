@@ -55,16 +55,9 @@ dependencies {
 	include "folk.sisby:kaleido-config:${project.kaleido_version}"
 
 
-    //!! McQoy is not yet updated to 26.1!
-	// McQoy Config
-//	compileOnly "maven.modrinth:mcqoy:${project.mcqoy_version}"
-
-	// YACL, required by McQoy
-//	compileOnly "dev.isxander:yet-another-config-lib:${project.yacl_version}"
-
     // QoMC
-    compileOnly "maven.modrinth:qomc:${project.qomc_version}"
-    runtimeOnly "maven.modrinth:qomc:${project.qomc_version}"
+//    compileOnly "maven.modrinth:qomc:${project.qomc_version}"
+//    runtimeOnly "maven.modrinth:qomc:${project.qomc_version}"
 
 
 	// ModMenu
