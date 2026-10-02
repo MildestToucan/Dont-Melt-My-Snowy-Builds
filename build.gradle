@@ -68,6 +68,10 @@ dependencies {
 
 processResources {
 	inputs.property "version", project.version
+	// Only the icon declared in fabric.mod.json is needed at runtime.
+	exclude "assets/nomeltsnowybuilds/actual_icon.png",
+			"assets/nomeltsnowybuilds/actual_icon_square_CF.png",
+			"assets/nomeltsnowybuilds/icon.png"
 
 	filesMatching("fabric.mod.json") {
 		expand "version": inputs.properties.version
